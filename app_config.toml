@@ -1,0 +1,336 @@
+﻿## 这里是道聚城的账号信息，需要自己配置
+## 这里是道聚城的账号信息，需要自己配置
+## 这里是道聚城的账号信息，需要自己配置
+## domain        默认 不用管
+## area_name     游戏大区名称          例如：广西三区
+## role_name     游戏角色名称          例如: 安于困惑
+## user_id       道聚城id                                   （道聚城点击 我的， 然后点击右上角 编辑  社区id 就是）
+## uin           QQ号
+## cookie        道聚城的登录凭据                           （需要抓包获取）
+## lol_name      lol角色名             例如：差不多的夜生活  (这里要填 艾欧尼亚大区的角色名， 因为我还没弄到 lol 大区数据)
+## run           是否执行                                   （默认 false 确保cookie填对了 再改成 true)
+[[request_configs.activity]]
+domain="daoju"                          
+area_name="广西三区"                     
+role_name="哺乳的器官"                   
+user_id="594405843"                     
+uin="4430331861"                        
+app_cookie="djc_appSource=android; djc_appVersion=114; acctype=; uin=o0443031861; skey=M9wxybsWBI"  
+lol_name="差不多的夜生活"
+run=true
+
+## 这里是DNF助手的账号信息，需要自己配置
+## 这里是DNF助手的账号信息，需要自己配置
+## 这里是DNF助手的账号信息，需要自己配置
+## domain        默认 不用管
+## area_name     游戏大区名称           例如：广西三区
+## role_name     游戏角色名称           例如: 安于困惑
+## user_id       助手id                                     （道聚城点击 我的， 然后点击右上角 编辑  社区id 就是）
+## uin           QQ号
+## cookie        DNF助手的登录凭据                          （需要抓包获取）
+## run           是否执行                                   （默认 false 确保cookie填对了 再改成 true)
+[[request_configs.activity]]
+domain="zhushou"                        
+area_name="广西三区"                     
+role_name="哺乳的器官"                   
+user_id="224769346"                     
+uin="4430331861"                        
+app_cookie="skey=M9wxybsWBI; uin=o0443031861; p_skey=-1M6bvQruU1L1tREoU1DnPXU3AeFGt6xTad1JCgqgzE_; p_uin=o0443031861; eas_sid=31F6T1m08683x335r4n6e1f8o5; pgv_info=ssid=s9288053527; pgv_pvid=8669461104; dnfqqcomrouteLine=a20201125lb1vfmm; tokenParams=%3F_isShare%3D1%26gameId%3D10014%26gameId%3D10014%26toOpenid%3D%26roleId%3D24542326%26uniqueRoleId%3D971580691%26openid%3D%26serverName%3D%25E5%25B9%25BF%25E8%25A5%25BF%25E4%25B8%2589%25E5%258C%25BA%26toUin%3D443031861%26cGameId%3D1006%26_isShare%3D1%26userId%3D224769346%26serverId%3D88%26token%3DZtYS6q2V%26isMainRole%3D1%26subGameId%3D10014%26areaId%3D36%26gameName%3DDNF%26areaName%3D%25E5%25B9%25BF%25E8%25A5%25BF%26roleJob%3D%25E6%259E%2581%25E8%25AF%25A3%25C2%25B7%25E7%258B%2582%25E6%2588%2598%25E5%25A3%25AB%26nickname%3D%25E4%25BB%258A%25E6%2599%259A%25E6%2589%2593%25E8%2580%2581%25E8%2599%258E%26roleName%3D%25E5%25AE%2589%25E4%25BA%258E%25E5%259B%25B0%25E6%2583%2591%26uin%3D443031861%26roleLevel%3D100%26; IED_LOG_INFO2=userUin%3D443031861%26uin%3D443031861%26nickName%3D%2525E4%2525BB%25258A%2525E6%252599%25259A%2525E6%252589%252593%2525E8%252580%252581%2525E8%252599%25258E%26nickname%3D%25E4%25BB%258A%25E6%2599%259A%25E6%2589%2593%25E8%2580%2581%25E8%2599%258E%26userLoginTime%3D1610633547%26logtype%3Dqq%26loginType%3Dqq"                          
+run=true
+
+## 注意 下面的配置信息不要动
+## 注意 下面的配置信息不要动
+## 注意 下面的配置信息不要动
+## 注意 下面的配置信息不要动
+## 注意 下面的配置信息不要动
+## 注意 下面的配置信息不要动
+## 注意 下面的配置信息不要动
+
+# [[request_configs.activity]]
+# domain="zhushou"                        ##默认 不用管
+# area_name="广西三区"                     ##游戏大区名称
+# role_name="只为回归勇士"                   ##游戏角色名称
+# user_id="224769346"                     ##助手id   助手点击 我的， 然后点击右上角 编辑  社区id 就是
+# uin="350082903"                        ##QQ号
+# app_cookie=""                           ##助手cookie 需要抓包获取
+
+
+[[request_configs.zhushou_activity]]
+name = "暗夜狂欢 诞元有礼"
+url="DNF助手"
+iActivityId = "350252"
+iFlowId = ""
+end_time="2021-01-24"
+set_aree_host="comm.ams.game.qq.com"
+sServiceType="bb"
+sRoleId="user_roleId"
+sArea="user_area"
+token="ZtYS6q2V"
+userId="224769346"
+[[request_configs.zhushou_activity.zhushou_operations]]
+name = "每日抽奖"
+iFlowId="726989"
+request_type="post"
+count=1
+delayed=0
+[[request_configs.zhushou_activity.zhushou_operations]]
+name = "签到满1天"
+iFlowId="727623"
+request_type="post"
+count=1
+delayed=0
+[[request_configs.zhushou_activity.zhushou_operations]]
+name = "签到满3天"
+iFlowId="727624"
+request_type="post"
+count=1
+delayed=0
+[[request_configs.zhushou_activity.zhushou_operations]]
+name = "签到满5天"
+iFlowId="727625"
+request_type="post"
+count=1
+delayed=0
+[[request_configs.zhushou_activity.zhushou_operations]]
+name = "签到满7天"
+iFlowId="727626"
+request_type="post"
+count=1
+delayed=0
+[[request_configs.zhushou_activity.zhushou_operations]]
+name = "签到满11天"
+iFlowId="727627"
+request_type="post"
+count=1
+delayed=0
+[[request_configs.zhushou_activity.zhushou_operations]]
+name = "签到满14天"
+iFlowId="727628"
+request_type="post"
+count=1
+delayed=0
+[[request_configs.zhushou_activity.zhushou_operations]]
+name = "签到满18天"
+iFlowId="727629"
+request_type="post"
+count=1
+delayed=0
+[[request_configs.zhushou_activity.zhushou_operations]]
+name = "签到满21天"
+iFlowId="727630"
+request_type="post"
+count=1
+delayed=0
+[[request_configs.zhushou_activity.zhushou_operations]]
+name = "火之精灵的补给-抽奖"
+iFlowId="727631"
+request_type="post"
+count=5
+delayed=1
+
+
+[[request_configs.zhushou_activity]]
+name = "DNF漂流瓶"
+url="DNF助手"
+iActivityId = "348890"
+iFlowId = "725356"
+end_time="2021-01-24"
+sServiceType="dnf"
+set_aree_host="x6m5.ams.game.qq.com"
+[[request_configs.zhushou_activity.zhushou_operations]]
+name = "在线30分钟"
+count=1
+delayed=0
+giftId="1437442"
+iFlowId="725675"
+request_type="post"
+[[request_configs.zhushou_activity.zhushou_operations]]
+name = "累计三天礼包"
+count=1
+delayed=0
+giftId="1437440"
+iFlowId="725699"
+request_type="post"
+[[request_configs.zhushou_activity.zhushou_operations]]
+name = "累计5天礼包"
+count=1
+delayed=0
+giftId="1437441"
+iFlowId="725699"
+request_type="post"
+[[request_configs.zhushou_activity.zhushou_operations]]
+name = "累计7天礼包"
+count=1
+delayed=0
+giftId="1437442"
+iFlowId="725699"
+request_type="post"
+
+
+# [[request_configs.zhushou_activity]]
+# name = "冒险的起点"
+# url="DNF助手"
+# iActivityId = "348683"
+# iFlowId = "725017"
+# token=""
+# end_time="2021-01-27"
+# set_aree_host="x6m5.ams.game.qq.com"
+# [[request_configs.zhushou_activity.zhushou_operations]]
+# name = "游戏资讯一网打尽"
+# iActivityId = "348683"
+# iFlowId="726082"
+# count=1
+# delayed=0
+
+
+# [[request_configs.zhushou_activity]]
+# url="DNF助手                                                                                                                                                                                                                                                                                                                                 "
+# name = "看江湖有翡 领勇士礼包"
+# iActivityId = "350668"
+# iFlowId = "727497"
+# token=""
+# end_time="2099-12-31"
+# type="zhushou"
+# [[request_configs.zhushou_activity.zhushou_operations]]
+# name = "勇士见面礼"
+# iFlowId="726989"
+# count=1
+# delayed=0
+
+#道聚城相关配置
+[[request_configs.daoju_activity]]
+url="道聚城"
+name = "聚豆任务"
+set_aree_host="comm.ams.game.qq.com"
+iActivityId = "11117"
+iFlowId = ""
+end_time="2099-12-31"
+[[request_configs.daoju_activity.daoju_operations]]
+name="领取每日登陆聚豆"
+iFlowId = "324410"
+request_type="post"
+count=1
+delayed=0
+[[request_configs.daoju_activity.daoju_operations]]
+name="累计签到3天"
+iFlowId = "322021"
+request_type="post"
+count=1
+delayed=0
+[[request_configs.daoju_activity.daoju_operations]]
+name="累计签到7天"
+iFlowId = "322036"
+request_type="post"
+count=1
+delayed=0
+[[request_configs.daoju_activity.daoju_operations]]
+name="累计签到10天"
+iFlowId = "322037"
+request_type="post"
+count=1
+delayed=0
+[[request_configs.daoju_activity.daoju_operations]]
+name="累计签到15天"
+iFlowId = "322038"
+request_type="post"
+count=1
+delayed=0
+[[request_configs.daoju_activity.daoju_operations]]
+name="累计签到20天"
+iFlowId = "322039"
+request_type="post"
+count=1
+delayed=0
+[[request_configs.daoju_activity.daoju_operations]]
+name="累计签到25天"
+iFlowId = "322040"
+request_type="post"
+count=1
+delayed=0
+[[request_configs.daoju_activity.daoju_operations]]
+name="绝不错亿"
+# act_type = "32697"
+request_type="get"
+task_type="activity_center"
+host="djcapp.game.qq.com"
+_service="app.task.report"
+count=1
+delayed=0
+[[request_configs.daoju_activity.daoju_operations]]
+name="道具许愿"
+request_type="get"
+host="djcapp.game.qq.com"
+_service="app.demand.create"
+iAppId="1001"
+iActionId="3"
+iGoodsId=""
+sBizCode="lol"
+iZoneId="1"
+count=1
+delayed=0
+[[request_configs.daoju_activity.daoju_operations]]
+name="兑换5个调整箱"
+request_type="tzx"
+host="apps.game.qq.com"
+_plug_id="9800"
+iGoodsSeqId="753"
+iActionId="2594"
+iActionType="26"
+_biz_code="dnf"
+_app_id="1003"
+lRoleId="user_roleId"
+iZone="user_area"
+count=2
+delayed=1
+[[request_configs.daoju_activity.daoju_operations]]
+name="完成绝不错亿"
+request_type="task_complete"
+host="apps.game.qq.com"
+output_format="json"
+optype="receive_usertask"
+appid="1001"
+iruleId="100040"
+count=1
+delayed=0
+[[request_configs.daoju_activity.daoju_operations]]
+name="完成有理想"
+request_type="task_complete"
+host="apps.game.qq.com"
+output_format="json"
+optype="receive_usertask"
+appid="1001"
+iruleId="302124"
+count=1
+delayed=0
+[[request_configs.daoju_activity.daoju_operations]]
+name="完成兑换有礼"
+request_type="task_complete"
+host="apps.game.qq.com"
+output_format="json"
+optype="receive_usertask"
+appid="1001"
+iruleId="327091"
+count=1
+delayed=0
+[[request_configs.daoju_activity.daoju_operations]]
+name="领取活跃度银宝箱"
+request_type="get"
+host="djcapp.game.qq.com"
+_service="welink.usertask.main"
+optype="receive_usertask"
+output_format="json"
+appid="1001"
+iruleId="100001"
+count=1
+delayed=0
+[[request_configs.daoju_activity.daoju_operations]]
+name="领取活跃度金宝箱"
+request_type="get"
+host="djcapp.game.qq.com"
+_service="welink.usertask.main"
+optype="receive_usertask"
+output_format="json"
+appid="1001"
+iruleId="100002"
+count=1
+delayed=0

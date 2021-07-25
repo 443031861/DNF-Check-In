@@ -1,0 +1,363 @@
+
+# 指定用户信息
+
+# [account_configs]
+# [[account_configs.user_info]]
+# account="350082903"             #QQ号
+# password="danshengou520"       #QQ密码
+# name="致郁"                #QQ昵称
+# area_name="广西三区"             #游戏大区
+# role_id=""                      #角色id  需要抓包可以不填
+# role_name="只为回归勇士"           ##角色名   
+
+
+[account_configs]
+[[account_configs.user_info]]
+account="443031861"             #QQ号
+password="danshengou520."       #QQ密码
+name="今晚打老虎"                #QQ昵称
+area_name="广西三区"             #游戏大区
+# role_id=""                      #角色id  需要抓包可以不填
+role_name="哺乳的器官"           ##角色名   
+
+
+
+
+
+
+
+
+# 空间相关活动
+[[request_configs.web_cookie]]
+url="https://i.qq.com/"
+cookie_check_url="https://user.qzone.qq.com/"
+loginer = ["login_frame"]
+verifyer = ["login_frame","tcaptcha_iframe"]
+is_get_cookie=true
+cookie_type=1
+login_btn=""
+domain="qzone"
+file="cookies\\cookie_qzone.txt"
+request_type="get"
+
+# 心悦活动
+[[request_configs.web_cookie]]
+url="https://xinyue.qq.com/#/"
+is_get_cookie=false
+cookie_type=1
+domain="xinyue"
+file="cookies\\cookie_xinyue.txt"
+request_type="post"
+
+# dnf游戏活动
+[[request_configs.web_cookie]]
+url="https://dnf.qq.com/main.shtml"
+is_get_cookie=false
+cookie_type=1
+domain="dnf"
+file="cookies\\cookie_dnf.txt"
+request_type="post"
+
+# 电脑管家活动
+[[request_configs.web_cookie]]
+url="https://guanjia.qq.com/#"
+loginer = ["login_ifr","ptlogin_iframe"]
+verifyer = ["login_ifr","ptlogin_iframe","tcaptcha_iframe"]
+is_get_cookie=true
+cookie_type=2
+login_btn="mgr_nav_login"
+domain="guanjia"
+file="cookies\\cookie_guanjia.txt"
+request_type="get"
+
+##  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+##  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+##  ++++++++++++++++++++++++++++++++ xinyue_activity ++++++++++++++++++++++++++++++++
+
+##  --------------------------------心悦俱乐部--------------------------------
+[[request_configs.xinyue_activity]]
+url="http://xinyue.qq.com/act/a20181101rights/"
+name = "心悦俱乐部"
+iActivityId = "166962"
+iFlowId="512491"
+end_time="2099-12-31"
+set_aree_host="act.game.qq.com"
+# type="xinyue"
+[[request_configs.xinyue_activity.xinyue_operations]]
+name="特邀会员周礼包领取"
+iFlowId="513581"
+count=1
+delayed=0
+[[request_configs.xinyue_activity.xinyue_operations]]
+name="特邀会员月礼包领取"
+iFlowId="673270"
+count=1
+delayed=0
+[[request_configs.xinyue_activity.xinyue_operations]]
+name="个人任务1"
+iFlowId="512399"
+count=1
+delayed=0
+[[request_configs.xinyue_activity.xinyue_operations]]
+name="个人任务2"
+iFlowId="512400"
+count=1
+delayed=0
+[[request_configs.xinyue_activity.xinyue_operations]]
+name="个人任务3"
+iFlowId="512389"
+count=1
+delayed=0
+
+##  --------------------------------闪光杯--------------------------------
+[[request_configs.xinyue_activity]]
+url="https://xinyue.qq.com/act/a20201221sgbpc/index.html"
+name = "闪光杯"
+iActivityId = "348607"
+iFlowId="724870"
+end_time="2099-12-31"
+set_aree_host="act.game.qq.com"
+[[request_configs.xinyue_activity.xinyue_operations]]
+name="周周闪光赢好礼-第一周"
+iFlowId="724878"
+count=1
+delayed=0
+[[request_configs.xinyue_activity.xinyue_operations]]
+name="周周闪光赢好礼-第二周"
+iFlowId="724878"
+count=1
+delayed=0
+[[request_configs.xinyue_activity.xinyue_operations]]
+name="周周闪光赢好礼-第三周"
+iFlowId="724878"
+count=1
+delayed=0
+[[request_configs.xinyue_activity.xinyue_operations]]
+name="周周闪光赢好礼-第四周"
+iFlowId="724878"
+count=1
+delayed=0
+[[request_configs.xinyue_activity.xinyue_operations]]
+name="周周闪光赢好礼-第五周"
+iFlowId="724878"
+count=1
+delayed=0
+[[request_configs.xinyue_activity.xinyue_operations]]
+name="周周闪光赢好礼-第六周"
+iFlowId="724878"
+count=1
+delayed=0
+[[request_configs.xinyue_activity.xinyue_operations]]
+name="每日登录DNF客户端+1次夺宝机会"
+iFlowId="724881"
+count=1
+delayed=0
+[[request_configs.xinyue_activity.xinyue_operations]]
+name="每日登录心悦俱乐部App+1次夺宝机会"
+iFlowId="724882"
+count=1
+delayed=0
+[[request_configs.xinyue_activity.xinyue_operations]]
+name="每日在DNF特权网吧登录+1次夺宝机会"
+iFlowId="724883"
+count=1
+delayed=0
+[[request_configs.xinyue_activity.xinyue_operations]]
+name="开始夺宝"
+iFlowId="724880"
+count=5
+delayed=1
+
+
+##  ++++++++++++++++++++++++++++++++ dnf_activity ++++++++++++++++++++++++++++++++
+
+##  --------------------------------暖冬豪礼--------------------------------
+[[request_configs.dnf_activity]]
+url="https://dnf.qq.com/lbact/a20200911lbz3dns/index.html"
+name = "暖冬豪礼"
+iActivityId = "347445"
+iFlowId="723161"
+end_time="2021-01-24"
+set_aree_host="x6m5.ams.game.qq.com"
+[[request_configs.dnf_activity.dnf_operations]]
+name="每日签到"
+iFlowId="723165"
+count=1
+delayed=0
+[[request_configs.dnf_activity.dnf_operations]]
+name="领取签到满3天奖励"
+iFlowId="723170"
+count=1
+delayed=0
+[[request_configs.dnf_activity.dnf_operations]]
+name="领取签到满5天奖励"
+iFlowId="723171"
+count=1
+delayed=0
+[[request_configs.dnf_activity.dnf_operations]]
+name="领取签到满7天奖励"
+iFlowId="723172"
+count=1
+delayed=0
+[[request_configs.dnf_activity.dnf_operations]]
+name="领取签到满10天奖励"
+iFlowId="723173"
+count=1
+delayed=0
+[[request_configs.dnf_activity.dnf_operations]]
+name="领取签到满15天奖励"
+iFlowId="723174"
+count=1
+delayed=0
+[[request_configs.dnf_activity.dnf_operations]]
+name="Wednf启动游戏抽奖资格领取"
+iFlowId="723175"
+count=1
+delayed=0
+[[request_configs.dnf_activity.dnf_operations]]
+name="游戏在线30分钟抽奖资格领取"
+iFlowId="723176"
+count=1
+delayed=0
+[[request_configs.dnf_activity.dnf_operations]]
+name="抽取道具"
+iFlowId="723177"
+count=5
+delayed=1
+
+##  --------------------------------马杰诺的关怀--------------------------------
+[[request_configs.dnf_activity]]
+url="https://dnf.qq.com/cp/a20201224welfare/index.html"
+name = "马杰诺的关怀"
+iActivityId = "350347"
+iFlowId="727123"
+end_time="2021-01-21"
+set_aree_host="x6m5.ams.game.qq.com"
+[[request_configs.dnf_activity.dnf_operations]]
+name="每日摇一摇"
+iFlowId="727213"
+count=1
+delayed=0
+[[request_configs.dnf_activity.dnf_operations]]
+name="点数乘2倍"
+iFlowId="727217"
+count=1
+delayed=0
+
+##  --------------------------------DNF大会员-玩家全线回馈--------------------------------
+[[request_configs.dnf_activity]]
+url="https://mall.qq.com/act/a20201203dnfvipdec/index.html"
+name = "DNF大会员-玩家全线回馈"
+iActivityId = "347408"
+iFlowId="723616"
+end_time="2021-12-31"
+set_aree_host="x6m5.ams.game.qq.com"
+[[request_configs.dnf_activity.dnf_operations]]
+name="连续签到"
+iFlowId="723613"
+count=1
+delayed=0
+
+##  --------------------------------史诗之路来袭--------------------------------
+[[request_configs.dnf_activity]]
+url="https://dnf.qq.com/lbact/a20201224aggregate/index.html"
+name = "史诗之路来袭"
+iActivityId = "353266"
+iFlowId="730659"
+end_time="2021-01-31"
+set_aree_host="x6m5.ams.game.qq.com"
+[[request_configs.dnf_activity.dnf_operations]]
+name="幸运勇士奖"
+iFlowId="730665"
+count=1
+delayed=0
+[[request_configs.dnf_activity.dnf_operations]]
+name="在线30min"
+iFlowId="730666"
+count=1
+delayed=0
+[[request_configs.dnf_activity.dnf_operations]]
+name="签到满3天"
+iFlowId="730663"
+count=1
+delayed=0
+[[request_configs.dnf_activity.dnf_operations]]
+name="签到满7天"
+iFlowId="730667"
+count=1
+delayed=0
+[[request_configs.dnf_activity.dnf_operations]]
+name="签到满15天"
+iFlowId="730668"
+count=1
+delayed=0
+
+
+##  ++++++++++++++++++++++++++++++++ qzone_activity ++++++++++++++++++++++++++++++++
+
+
+[[request_configs.qzone_activity]]
+url="https://act.qzone.qq.com/vip/meteor/blockly/p/6489x47ffe"
+name = "元旦盛典"
+iActivityId="6666"
+iFlowId = "66666"
+end_time="2021-01-31"
+host=""
+[[request_configs.qzone_activity.qzone_operations]]
+name="勇士见面礼"
+actid="4216"
+ruleid="29064"
+uin = "443031861"
+count=1
+delayed=0
+
+
+[[request_configs.qzone_activity]]
+url="https://act.qzone.qq.com/vip/meteor/blockly/p/6485xb2f2b"
+name = "DNF惊喜礼盒"
+iActivityId="6666"
+iFlowId = "66666"
+end_time="2021-01-31"
+host=""
+[[request_configs.qzone_activity.qzone_operations]]
+name="勇士见面礼"
+actid="4216"
+ruleid="29064"
+uin = "443031861"
+count=1
+delayed=0
+
+
+##  ++++++++++++++++++++++++++++++++ guanjia_activity ++++++++++++++++++++++++++++++++
+
+
+[[request_configs.guanjia_activity]]
+url="http://guanjia.qq.com/act/cop/202012dnf/"
+name = "DNF暖冬献礼"
+end_time="2021-01-31"
+[[request_configs.guanjia_activity.guanjia_operations]]
+name="电脑管家特权礼包"
+giftId="7546"
+count=1
+delayed=2
+[[request_configs.guanjia_activity.guanjia_operations]]
+name="连续2天登录助手"
+giftId="7547"
+count=1
+delayed=2
+[[request_configs.guanjia_activity.guanjia_operations]]
+name="每日游戏在线30分钟"
+giftId="7550"
+count=1
+delayed=2
+[[request_configs.guanjia_activity.guanjia_operations]]
+name="每日游戏在线30分钟"
+giftId="7550"
+count=1
+delayed=2
+[[request_configs.guanjia_activity.guanjia_operations]]
+name="立即抽奖"
+giftId="7550"
+count=2
+delayed=2
